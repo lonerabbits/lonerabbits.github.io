@@ -1,3 +1,6 @@
 body{
-    background-image: url('https://github.com/rabbitalone/rabbitalone.github.io/blob/main/assets/img/DNA.jpg');
+    background-image: url(../img/DNA.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
