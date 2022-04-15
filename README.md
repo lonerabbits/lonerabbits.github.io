@@ -1,0 +1,23 @@
+## 需求
+
+* 写点儿东西
+  * 用markdown写，CSS同GitHub
+* 游戏记录
+  * 图片，名称，星级
+* Fluent UI
+* 好看的书
+
+## 备注
+
+steam游戏封面大小是600×900px，保存在：
+> C:\Program Files (x86)\Steam\appcache\librarycache
+
+## 问题
+
+- [ ] 下面为什么会有滚动条
+- [ ] web字体
+- [ ] 怎么打半星
+
+
+
+
