@@ -55,11 +55,15 @@ ul > li {
     display: inline;
 }
 .rank-rated{
-    color: #f6be00;
+    color: gold;
 }
 .rank-notrated{
-    color: #aaaaaa;
+    color: gray;
 }
-/* .rank-halfrated{
-    background: linear-gradient(to right, #f6be00 50%, #aaaaaa 50%);
-} */
+.rank-halfrated{
+    background: linear-gradient(to right, gold 50%, gray 50%);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
