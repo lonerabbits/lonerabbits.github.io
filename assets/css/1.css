@@ -1,6 +1,50 @@
 body{
-    background-image: url(../img/DNA.jpg);
+    background-color: #1b2838;
+    /* background-image: url(../img/DNA.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+}
+h1 {
+    color: white;
+    margin: 24px;
+}
+.item{
+    width: 100%;
+    margin: 12px;
+}
+.item img{
+    width: 160px;
+    height: 240px;
+}
+.item h2{
+    font-family: '思源黑体';
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+.item p{
+    font-family: '思源黑体';
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+.item div {
+	position: relative;
+	float: left;
+	width: 160px;
+	height: 240px;
+	margin: 12px 12px 108px 12px;
+}
+.item div img{
+    width: 160px;
+    height: 240px;
+    margin: 0px;
+}
+figure {
+	width: 160px;
+	height: 240px;
+	overflow: hidden;
+    border-radius: 4px;
+    margin: 0px;
 }

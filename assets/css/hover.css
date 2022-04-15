@@ -1,0 +1,10 @@
+.hover figure img {
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+	object-fit: cover;
+
+}
+.hover figure:hover img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
