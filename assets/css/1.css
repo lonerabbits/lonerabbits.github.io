@@ -66,4 +66,112 @@ ul > li {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.navItem{
+    display: flex;
+    align-items: center;
+}
+.navItem svg{
+    height: 36px;
+    margin: 8px;
+}
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* 以下是侧边导航 */
+.wrap{
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 400px;
+}
+.sideBar{
+    width: 80px;
+    background-color: red;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.sideBar:hover {
+    width: 200px;
+}
+.sideBar:hover .sideLine{
+    width: 160px;
+}
+.avatar{
+    /* margin: 12px; */
+    display: flex;
+}
+.avatar div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid rgba(255,255,255,0.5);
+    overflow: hidden;
+}
+.avatar div img{
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* .avatar p{
+    opacity: 0;
+} */
+.sideLine{
+    height: 2px;
+    width: 24px;
+    margin: 24px;
+    background-color: white;
+    opacity: 75%;
+    transition: 0.5s;
+}
+.sideMenu{
+    background-color: blue;
+    width: 120px;
+}
+.menuItem{
+    display: flex;
+    align-items: center;
+    margin: 6px 6px 6px 6px;
+    justify-content: space-around;
+    width: 120px;
+    border-radius: 4px;
+    transition: 0.5s;
+    position: relative;
+}
+.menuItem:hover{
+    background-color: green;
+}
+.menuItem embed{
+    width: 24px;
+    margin: 8px;
+}
+.menuItem span{
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    opacity: 0;
+}
+.sideBar:hover .menuItem span{
+    opacity: 1;
+}
+.focus{
+    width: 6px;
+    height: 30px;
+    background-color: yellow;
+    position: absolute;
+    left: -6px;
+    transition: 0.5s;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    opacity: 0;
+}
+.menuItem:hover .focus{
+    opacity: 1;
+}
