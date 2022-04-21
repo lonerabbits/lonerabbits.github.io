@@ -1,4 +1,4 @@
-## 需求
+## 想法
 
 * 写点儿东西
   * 用markdown写，CSS同GitHub
@@ -9,8 +9,7 @@
 
 ## 备注
 
-steam游戏封面大小是600×900px，保存在：
-> C:\Program Files (x86)\Steam\appcache\librarycache
+steam游戏封面大小是600×900px，保存在：`C:\Program Files (x86)\Steam\appcache\librarycache`
 
 ## 问题
 
