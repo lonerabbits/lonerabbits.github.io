@@ -1,6 +1,10 @@
 body{
     background-color: #1b2838;
 }
+.content{
+    display: flex;
+    flex-direction: row;
+}
 h1 {
     color: white;
     margin: 24px;
@@ -83,17 +87,14 @@ a{
 /* 以下是侧边导航 */
 .wrap{
     align-items: center;
-    justify-content: center;
-    background-color: bisque;
+    justify-content: left;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 240px;
     height: 400px;
 }
 .sideBar{
-    width: 80px;
-    background-color: red;
+    width: 60px;
+    background-color: #1b2838;
+    border: 2px solid white;
     border-radius: 8px;
     overflow: hidden;
     transition: 0.5s;
@@ -146,10 +147,10 @@ a{
     position: relative;
 }
 .menuItem:hover{
-    background-color: green;
+    background-color: grey;
 }
 .menuItem embed{
-    width: 24px;
+    width: 20%;
     margin: 8px;
 }
 .menuItem span{

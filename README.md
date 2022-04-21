@@ -4,8 +4,6 @@
   * 用markdown写，CSS同GitHub
 * 游戏记录
   * 图片，名称，星级
-* Fluent UI
-* 好看的书
 
 ## 备注
 
