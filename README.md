@@ -9,6 +9,8 @@
 
 steam游戏封面大小是600×900px，保存在：`C:\Program Files (x86)\Steam\appcache\librarycache`
 
+steam背景色是`#1b2838`
+
 ## 问题
 
 - [ ] web字体
