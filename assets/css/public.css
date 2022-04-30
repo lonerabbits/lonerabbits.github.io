@@ -141,6 +141,10 @@ a{
         margin: 24px 12px;
         align-items: center;
     }
+    body div .content .main{
+        padding: 0px 12px;
+        width: 100%;
+    }
     .sideBar{
         display: flex;
         flex-direction: row;
