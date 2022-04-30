@@ -168,6 +168,9 @@ a{
 .sideBar:hover .menuItem span{
     opacity: 1;
 }
+.menuItem span{
+    opacity: 1;
+}
 .focus{
     width: 4px;
     height: 40px;
@@ -184,9 +187,7 @@ a{
 
 
 /* 以下是正文 */
-.main{
-    margin: 0px 36px;
-}
+
 .ionicon {
     height: 24px;
     width: 24px;

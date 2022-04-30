@@ -13,12 +13,6 @@ steam游戏封面大小是600×900px，保存在：`C:\Program Files (x86)\Steam
 
 steam背景色是`#1b2838`
 
-避免手机缩放：
-
-```css
-<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-```
-
 ## 问题
 
 - [ ] 显示字体
