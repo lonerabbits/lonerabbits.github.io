@@ -1,3 +1,8 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
 body{
     background-color: #f2f2f7;
 }
@@ -20,7 +25,7 @@ a{
     text-decoration: none;
 }
 
-/* 以下是侧边导航 */
+/* 以下是导航栏 */
 .wrap{
     align-items: center;
     justify-content: left;
@@ -134,11 +139,13 @@ a{
         display: flex;
         flex-direction: column;
         margin: 24px 12px;
+        align-items: center;
     }
     .sideBar{
         display: flex;
         flex-direction: row;
-        height: 60px;
+        justify-content: center;
+        height: 48px;
         width: 320px;
         border: 1.5px solid black;
         border-radius: 8px;
@@ -161,6 +168,8 @@ a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        width: auto;
+        margin: 0;
     }
     .menuItem{
         display: flex;

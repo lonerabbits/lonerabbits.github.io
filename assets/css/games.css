@@ -25,7 +25,6 @@
 	margin: 0px;
 }
 .item div note{
-    font-family: '思源黑体';
     font-size: 16px;
     color: white;
 	position: absolute;
@@ -45,13 +44,11 @@
     height: 240px;
 }
 .item h2{
-    font-family: '思源黑体';
     font-weight: bold;
     color: black;
     font-size: 16px;
 }
 .item p{
-    font-family: '思源黑体';
     font-weight: bold;
     font-size: 16px;
     color: black;
