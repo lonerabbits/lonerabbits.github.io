@@ -1,122 +1,45 @@
-body{
-    background-color: #f2f2f7;
+html, body, content{
+    height: 100%;
 }
-.content{
+body div{
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    margin: 24px 12px;
-}
-.sideBar{
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    width: 320px;
-    border: 1.5px solid black;
-    border-radius: 8px;
-    background-color: white;
-}
-.ionicon{
-    display: none;
-}
-.avatar{
-    display: none;
-}
-.sideLine{
-    display: none;
-}
-.sideBar:hover {
-    width: 320px;
-}
-.sideMenu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.menuItem{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 6px 0px 6px 0px;
-    width: 60px;
-    height: 40px;
-    border-radius: 4px;
-    transition: 0.5s;
-}
-.menuItem span{
-    opacity: 1;
-}
-.menuItem span a {
-    color: black;
-    text-decoration: none;
-}
-.focus{
-    display: none;
-}
-
-/* 以下是显示 */
-.main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 24px;
-}
-.container{
-    background-color: white;
-    width: 720px;
-    height: 120px;
-    margin: 12px 0px;
-    display: flex;
-    align-items: center;
     justify-content: flex-start;
-    border-radius: 4px;
-    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
-.container:hover{
-    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.2);
+.wrap{
+    height: auto;
+    justify-self: flex-start;
 }
-.container div{
-    margin: 12px;
-    display: flex;
-    align-items: center;
+.main{
+    background: url(/assets/svg/863310.svg) no-repeat;
+    background-size: contain;
 }
-.container div img{
-    height: 90px;
-    width: 160px;
-    object-fit: cover;
-}
-.container div div{
-    margin: 24px;
-    height: 90px;
+.box{
+    height: 600px;
+    width: 600px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-around;
+    overflow: hidden;
 }
-.container div div h3{
-    margin: 4px 0px;
-}
-.container div div span{
-    margin: 4px 0px;
-    color: gray;
-}
-
-/* 以下测试正文 */
-
-.container{
-    height: auto;
+.child{
     width: auto;
+    height: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    /* text-shadow: 0 0 2px black; */
+    -webkit-text-stroke: 1px black;
+    transform: translateX(1200px);
+    animation: scrollTo linear 4s infinite
 }
-.container div{
-    display: flex;
-    flex-direction: column;
+.child-1{
+    transform: translateX(1000px);
 }
-.container div img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.container div div{
-    margin: 12px 12px 0px 12px;
-    height: auto;
+
+@keyframes scrollTo {
+    to{
+        transform: translateX(-100px);
+    }
 }
