@@ -22,6 +22,11 @@
         width: 360px;
     }
 }
+@media screen and (max-width: 600px){
+    .mainArea{
+        padding: 24px 18px;
+    }
+}
 .mainArea h3{
     margin: 12px 0px;
 }
