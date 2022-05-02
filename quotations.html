@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rabbitalone</title>
         <link rel="stylesheet" href="./assets/css/public.css">
-        <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="./assets/css/quotations.css">
         <link rel="shortcut icon" type="image/x-icon" href="./assets/icon/favicon1.ico">
+        <script src="./assets/script/html2canvas.js" type="text/javascript"></script>
+        <script src="./assets/script/quotations.js" type="text/javascript"></script>
     </head>
     <body>
         <div>
@@ -23,7 +25,7 @@
                         <div class="sideMenu">
                             <div class="menuItem">
                                 <div class="focus"></div>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Home</title><path d="M261.56 101.28a8 8 0 00-11.06 0L66.4 277.15a8 8 0 00-2.47 5.79L63.9 448a32 32 0 0032 32H192a16 16 0 0016-16V328a8 8 0 018-8h80a8 8 0 018 8v136a16 16 0 0016 16h96.06a32 32 0 0032-32V282.94a8 8 0 00-2.47-5.79z"/><path d="M490.91 244.15l-74.8-71.56V64a16 16 0 00-16-16h-48a16 16 0 00-16 16v32l-57.92-55.38C272.77 35.14 264.71 32 256 32c-8.68 0-16.72 3.14-22.14 8.63l-212.7 203.5c-6.22 6-7 15.87-1.34 22.37A16 16 0 0043 267.56L250.5 69.28a8 8 0 0111.06 0l207.52 198.28a16 16 0 0022.59-.44c6.14-6.36 5.63-16.86-.76-22.97z"/></svg>                                
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Home</title><path d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
                                 <span>
                                     <a href="index.html">首页</a>
                                 </span>
@@ -51,7 +53,7 @@
                             </div>
                             <div class="menuItem">
                                 <div class="focus"></div>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Color Palette</title><path d="M430.11 347.9c-6.6-6.1-16.3-7.6-24.6-9-11.5-1.9-15.9-4-22.6-10-14.3-12.7-14.3-31.1 0-43.8l30.3-26.9c46.4-41 46.4-108.2 0-149.2-34.2-30.1-80.1-45-127.8-45-55.7 0-113.9 20.3-158.8 60.1-83.5 73.8-83.5 194.7 0 268.5 41.5 36.7 97.5 55 152.9 55.4h1.7c55.4 0 110-17.9 148.8-52.4 14.4-12.7 11.99-36.6.1-47.7z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><circle cx="144" cy="208" r="32"/><circle cx="152" cy="311" r="32"/><circle cx="224" cy="144" r="32"/><circle cx="256" cy="367" r="48"/><circle cx="328" cy="144" r="32"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Glasses</title><path d="M464 184h-10.9a78.72 78.72 0 00-16-7.18C419.5 171 396.26 168 368 168s-51.5 3-69.06 8.82c-14.06 4.69-20.25 9.86-22.25 11.87a47.94 47.94 0 00-41.36 0c-2-2-8.19-7.18-22.25-11.87C195.5 171 172.26 168 144 168s-51.5 3-69.06 8.82a78.72 78.72 0 00-16 7.18H48a16 16 0 000 32h.17c1 45.46 6.44 72.78 18.11 92.23a66.78 66.78 0 0031.92 28c12.23 5.24 27.22 7.79 45.8 7.79 24.15 0 58.48-3.71 77.72-35.77 9.68-16.14 15.09-37.69 17.21-70.52A16 16 0 00240 232a16 16 0 0132 0 16 16 0 001.07 5.71c2.12 32.83 7.53 54.38 17.21 70.52a66.78 66.78 0 0031.92 28c12.23 5.24 27.22 7.79 45.8 7.79 24.15 0 58.48-3.71 77.72-35.77 11.67-19.45 17.13-46.77 18.11-92.23h.17a16 16 0 000-32z"/></svg>
                                 <span>
                                     <a href="quotations.html">语录</a>
                                 </span>
@@ -60,7 +62,24 @@
                     </div>
                 </div>
                 <div class="main">
-
+                    <h2>语录图片生成</h2>
+                    <div class="mainArea">
+                        <h3>1.内容</h3>
+                        <h4>输入正文：</h4>
+                        <input id="quotesshowinput">
+                        <h4>输入出处：</h4>
+                        <input id="quotesfrominput">
+                        <button onclick="decide()">效果预览</button>
+                        <h3>2.预览</h3>
+                        <div class="container" id="pic">
+                            <p id="quotesshow" class="quotesshow"></p>
+                            <p id="quotesfrom" class="quotesfrom"></p>
+                        </div>
+                        <button onclick="convert()">确定生成</button>
+                        <h3>3.结果</h3>
+                        <p>右键保存图片</p>
+                        <!-- <canvas id="holder"></canvas> -->
+                    </div>
                 </div>
             </div>
         </div>
