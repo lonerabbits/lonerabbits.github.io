@@ -68,6 +68,7 @@ input:focus{
     font-family: "黑体";
     font-size: 1.2rem;
     margin: 12px 18px;
+    color: white;
 }
 .quotesshow{
     height: auto;
@@ -85,9 +86,12 @@ input:focus{
     border-radius: 4px;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
     transition: 0.2s ease-in-out;
+    /* background-color: var(--apple-bg2); */
 }
 button:hover{
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+    /* border: 2px solid var(--apple-red);
+    background-color: var(--apple-bg2); */
 }
 /* #holder{
     border: 1.5px solid rgba(0, 0, 0, 0.2);
