@@ -2,7 +2,7 @@
     width: 100%;
 }
 .container{
-    background-color: white;
+    background-color: var(--apple-bg3);
     width: 100%;
     max-width: 840px;
     height: 120px;
@@ -37,10 +37,11 @@
 }
 .container div div h3{
     margin: 4px 0px;
+    color: var(--apple-label1);
 }
 .container div div span{
     margin: 4px 0px;
-    color: gray;
+    color: var(--apple-label2);
 }
 
 
@@ -52,7 +53,6 @@
         padding: 0px 24px;
     }
     .container{
-        background-color: white;
         height: 120px;
         margin: 12px 0px;
         display: flex;
@@ -87,7 +87,6 @@
     }
     .container div div span{
         margin: 4px 0px;
-        color: gray;
     }
     
     /* 以下测试正文 */

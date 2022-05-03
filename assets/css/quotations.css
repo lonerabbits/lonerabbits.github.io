@@ -1,16 +1,18 @@
-.sideBar{
-    border: 1.5px solid black;
+/* 覆写导航栏主题色 */
+.avatar div{
+    border: 2px solid var(--apple-red);
 }
 .ionicon{
-    fill: #ff3b30;
+    fill: var(--apple-red);
 }
 .focus{
-    background-color: #ff3b30;
+    background-color: var(--apple-red);
 }
 
+/* 正文 */
 .mainArea{
     padding: 24px 48px;
-    background-color: white;
+    background-color: var(--apple-bg3);
     border-radius: 8px;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -35,7 +37,7 @@
 }
 
 .container{
-    background-color: #ff3b30;
+    background-color: var(--apple-red);
     height: auto;
     min-height: 160px;
     width: 100%;
@@ -48,15 +50,16 @@
 }
 
 input{
-    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    border: 1.5px solid var(--apple-separator);
     border-radius: 4px;
-    background-color: white;
+    background-color: var(--apple-bg2);
+    color: var(--apple-label1);
     font-size: 16px;
     margin: 12px 0px;
     height: 40px;
 }
 input:focus{
-    outline: 2px solid #ff3b30;
+    outline: 2px solid var(--apple-red);
     border: 1.5px solid rgba(0, 0, 0, 0);
 }
 .container p{
@@ -64,7 +67,6 @@ input:focus{
     align-items: center;
     font-family: "黑体";
     font-size: 1.2rem;
-    color: white;
     margin: 12px 18px;
 }
 .quotesshow{
@@ -79,7 +81,6 @@ input:focus{
     width: 96px;
     margin: 12px 0px;
     align-self: center;
-    background-color: white;
     border: none;
     border-radius: 4px;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);

@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 48px;
     border-radius: 4px;
-    background-color: white;
+    background-color: var(--apple-bg3);
     height: auto;
     box-sizing:border-box;
     width: 100%;
@@ -23,13 +23,13 @@
     margin: 0px 0px 0px 12px;
 }
 .marker{
-    background-color: black;
+    background-color: var(--apple-label1);
     height: 12px;
     width: 12px;
     border-radius: 50%;
 }
 .markerline{
-    background-color: #d1d1d6;
+    background-color: var(--apple-separator);
     height: 60px;
     width: 2px;
     margin: 5px;

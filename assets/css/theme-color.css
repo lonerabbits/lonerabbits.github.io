@@ -1,0 +1,45 @@
+:root{
+    --apple-red: #ff3b30;
+    --apple-yellow: #ffcc00;
+    --apple-green: #34c759;
+    --apple-blue: #007aff;
+    --apple-brown: #a2845e;
+    --apple-gray: #8e8e93;
+    --apple-gray2: #aeaeb2;
+    --apple-gray3: #c7c7cc;
+    --apple-gray4: #d1d1d6;
+    --apple-gray5: #e5e5ea;
+    --apple-gray6: #f2f2f7;
+    --apple-label1: #000000;
+    --apple-label2: rgba(60,60,67,0.6);
+    --apple-label3: rgba(60,60,67,0.3);
+    --apple-label4: rgba(60,60,67,0.18);
+    --apple-separator:#C6C6C8;
+    --apple-bg1: #FFFFFF;
+    --apple-bg2: #F2F2F7;
+    --apple-bg3: #FFFFFF;
+}
+
+@media screen and (prefers-color-scheme:dark){
+    :root{
+        --apple-red: #ff453a;
+        --apple-yellow: #ffd60a;
+        --apple-green: #30d158;
+        --apple-blue: #0a84ff;
+        --apple-brown: #ac8e68;
+        --apple-gray: #8e8e93;
+        --apple-gray2: #636366;
+        --apple-gray3: #48484a;
+        --apple-gray4: #3a3a3c;
+        --apple-gray5: #2c2c2e;
+        --apple-gray6: #1c1c1e;
+        --apple-label1: #FFFFFF;
+        --apple-label2: rgba(235,235,245,0.6);
+        --apple-label3: rgba(235,235,245,0.3);
+        --apple-label4: rgba(235,235,245,0.18);
+        --apple-separator:#38383A;
+        --apple-bg1: #000000;
+        --apple-bg2: #1C1C1E;
+        --apple-bg3: #2C2C2E;
+    }
+}
