@@ -101,6 +101,6 @@ button:hover{
     background-color: var(--apple-bg2); */
 }
 #holder{
-    margin: 0px 0px 24px 0px;
+    margin: 12px 0px 24px 0px;
     object-fit: cover;
 }
