@@ -1,0 +1,24 @@
+.main{
+    justify-self: center;
+    align-self: center;
+}
+#wow{
+    justify-self: center;
+    align-self: center;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -100%);
+    text-align: center;
+}
+#wow span{
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+}
+#typed{
+    color: var(--apple-label2);
+}
+.typed-cursor{
+    color: var(--apple-label3);
+}
