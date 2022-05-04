@@ -1,3 +1,9 @@
+/* 引入字体 */
+@font-face {
+    font-family: "ZLMLDKT";
+    src: url(../font/ZLMLDKT.otf);
+}
+
 /* 覆写导航栏主题色 */
 .avatar div{
     border: 2px solid var(--apple-red);
@@ -37,7 +43,7 @@
 }
 
 .container{
-    background-color: var(--apple-red);
+    background-color: #cc2831;
     height: auto;
     min-height: 160px;
     width: 100%;
@@ -65,10 +71,11 @@ input:focus{
 .container p{
     width: auto;
     align-items: center;
-    font-family: "黑体";
-    font-size: 1.2rem;
+    font-family: ZLMLDKT;
+    font-size: 18px;
+    line-height: 1.8;
     margin: 12px 18px;
-    color: white;
+    color: #f4eee2;
 }
 .quotesshow{
     height: auto;
