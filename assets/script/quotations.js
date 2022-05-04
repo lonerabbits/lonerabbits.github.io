@@ -12,6 +12,8 @@ function convert(){
     }).then(function(canvas) {
         var imgUrl = canvas.toDataURL("image/png");
         var holderImage = document.getElementById('holder');
+        var picHeight = document.getElementById('pic').clientHeight;
         holderImage.src = imgUrl;
+        holderImage.height = picHeight;
     });
 }
