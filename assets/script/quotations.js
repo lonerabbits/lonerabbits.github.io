@@ -8,7 +8,7 @@ function decide(){
 
 function convert(){
     html2canvas(document.querySelector("#pic"),{
-        scale: 2.5
+        scale: 2.5, backgroundColor: null
     }).then(function(canvas) {
         var imgUrl = canvas.toDataURL("image/png");
         var holderImage = document.getElementById('holder');
