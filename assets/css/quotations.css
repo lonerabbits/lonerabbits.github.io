@@ -100,8 +100,6 @@ button:hover{
     /* border: 2px solid var(--apple-red);
     background-color: var(--apple-bg2); */
 }
-/* #holder{
-    border: 1.5px solid rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    margin: 12px 0px;
-} */
+#holder{
+    margin: 0px 0px 24px 0px;
+}
