@@ -1,6 +1,6 @@
 ## 想法
 
-* 写点儿东西，使用GitHub提供的Markdown转换接口将Markdown转换成HTML，API在`https://api.github.com/markdown`
+* 写点儿东西，~~使用GitHub提供的Markdown转换接口将Markdown转换成HTML，API在`https://api.github.com/markdown`~~，使用pandoc导出，以[github-markdown-css](https://github.com/sindresorhus/github-markdown-css)渲染
 * 游戏记录：游戏封面，名称，星级
 * 读后感？
 * 动态
