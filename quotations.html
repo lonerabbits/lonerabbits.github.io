@@ -70,6 +70,23 @@
                         <input id="quotesshowinput">
                         <h4>输入出处：</h4>
                         <input id="quotesfrominput">
+                        <div class="check-back">
+                            <h4>选择图片背景：</h4>
+                            <div class="check-back-box">
+                                <div>
+                                    <input type="radio" name="checkbackcolor" id="inputcm" onchange="decideBackground1()">
+                                    <label id="checkcm">康米红</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="checkbackcolor" id="inputch" onchange="decideBackground2()">
+                                    <label id="checkch">春华青</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="checkbackcolor" id="inputyj" onchange="decideBackground3()">
+                                    <label id="checkyj">亚甲蓝</label>
+                                </div>
+                            </div>
+                        </div>
                         <button onclick="decide()">效果预览</button>
                         <h3>2.预览</h3>
                         <div class="container" id="pic">

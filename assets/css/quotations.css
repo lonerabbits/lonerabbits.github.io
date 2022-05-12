@@ -45,7 +45,7 @@
 .container{
     background-color: #cc2831;
     height: auto;
-    min-height: 160px;
+    min-height: 60px;
     width: 100%;
     margin: 12px 0px;
     border-radius: 4px;
@@ -103,4 +103,31 @@ button:hover{
 #holder{
     margin: 12px 0px 24px 0px;
     object-fit: cover;
+}
+.check-back{
+    display: flex;
+    flex-direction: column;
+}
+.check-back-box{
+    display: flex;
+    flex-direction: row;
+}
+.check-back-box div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 6px;
+}
+.check-back-box div label{
+    font-weight: bold;
+    margin: 0px 6px;
+}
+#checkcm{
+    color: #cc2831;
+}
+#checkch{
+    color: #007d1b;
+}
+#checkyj{
+    color: #3d489a;
 }

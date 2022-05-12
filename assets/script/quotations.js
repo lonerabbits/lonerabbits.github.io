@@ -17,3 +17,13 @@ function convert(){
         holderImage.height = picHeight;
     });
 }
+
+function decideBackground1(){
+    document.querySelector("#pic").style.background = '#cc2831';
+}
+function decideBackground2(){
+    document.querySelector("#pic").style.background = '#007d1b';
+}
+function decideBackground3(){
+    document.querySelector("#pic").style.background = '#3d489a';
+}
