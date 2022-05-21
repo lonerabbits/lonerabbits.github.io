@@ -1,17 +1,72 @@
 body{
-    background: url(./assets/img/civ6.jpg) no-repeat;
+    /* background: url(../assets/img/civ6.jpg) no-repeat; */
     background-size:cover;
+    background-color: --apple-gray6;
     margin: 0;
 }
-.nav-bar{
+.globalnav{
+    height: 48px;
+    background: rgba(240,240,240,0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.globalnav-content{
+    width: 80vw;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 900;
+}
+.logo-area span{
+    color: var(--apple-brown);
+    margin: 0 4px;
+    font-size: 1.2rem;
+}
+.globalnav img{
+    height: 24px;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ul > li {
+    display: inline;
+    margin: 0 24px;
+    float: left;
+
+}
+.nav-link-text{
+    color: var(--apple-label2);
+}
+
+.localnav{
     height: 48px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    background-color: rgba(255,255,255,0.2);
-    backdrop-filter: blur(8px);
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.72);
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .nav-item{
     
@@ -30,7 +85,7 @@ body{
 }
 .content div{
     background-color: white;
-    height: 40px;
+    height: 4000px;
     width: 120px;
     margin: 24px;
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
