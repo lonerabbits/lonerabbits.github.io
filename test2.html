@@ -10,32 +10,32 @@
     <link rel="stylesheet" href="test2.css">
 </head>
 <body>
-    <div class="globalnav">
+    <div class="globalnav" id="globalnav">
         <div class="globalnav-content">
             <div class="logo-area">
                 <image src="./favicon1.ico"></image>
-                <span>长空</span>
+                <span>abc</span>
             </div>
             <ul>
                 <li>
-                    <a class="nav-link-text" href="./index.html">首页</a>
+                    <a class="nav-link-text" href="./index.html">1</a>
                 </li>
                 <li>
-                    <a class="nav-link-text" href="./games/">游戏</a>
+                    <a class="nav-link-text" href="./games/">2</a>
                 </li>
                 <li>
-                    <a class="nav-link-text" href="./articles/">文章</a>
+                    <a class="nav-link-text" href="./articles/">3</a>
                 </li>
                 <li>
-                    <a class="nav-link-text" href="./quotations/">工具</a>
+                    <a class="nav-link-text" href="./quotations/">4</a>
                 </li>
                 <li>
-                    <a class="nav-link-text" href="./abouts/">关于</a>
+                    <a class="nav-link-text" href="./abouts/">5</a>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="localnav">
+    <div class="localnav" id="localnav">
         <div class="localnav-content">
             <h2 class="localnav-title">
                 <a>独立寒秋湘江北去橘子洲头看</a>
@@ -46,5 +46,30 @@
         <main>
         </main>
     </div>
+    <script>
+            function decideDirection() {
+                var positionY = 'undefined';
+                var directionY;
+                let globalNav = document.getElementById('globalnav');
+                let localNav = document.getElementById('localnav');
+                window.addEventListener('scroll', function () {
+                    setTimeout(function () {
+                        if (positionY === "undefined") {
+                            positionY = window.scrollY;
+                        }
+                        directionY = window.scrollY - positionY;
+                        if (directionY < 0) {
+                            globalNav.classList.remove('nav-visibility');
+                            localNav.classList.remove('nav-stickeytop')
+                        } else if (directionY > 0) {
+                            localNav.classList.add('nav-stickeytop')
+                            globalNav.classList.add('nav-visibility');
+                        }
+                        positionY = window.scrollY;
+                    }, 200)
+                });
+            }
+            decideDirection();
+      </script>
 </body>
 </html>

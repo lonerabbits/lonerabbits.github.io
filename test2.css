@@ -13,6 +13,8 @@ body{
     align-items: center;
     backdrop-filter: saturate(180%) blur(20px);
     background: rgba(240,240,240,0.8);
+    position: sticky;
+    top: 0;
 }
 .globalnav-content{
     width: 80vw;
@@ -59,11 +61,7 @@ ul > li {
 }
 
 .localnav{
-    position: sticky;
-    top: 0;
-    left: 0;
     height: 52px;
-    /* min-width: 1024px; */
     backdrop-filter: saturate(180%) blur(20px);
     background-color: rgba(255,255,255,0.72);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
@@ -71,6 +69,8 @@ ul > li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 3rem;
 }
 .localnav-content{
     width: 80vw;
@@ -79,7 +79,10 @@ ul > li {
 .localnav-title {
     margin: 0;
     font-size: 1.2rem;
-    font-weight: 400;    
+    font-weight: bold;
+}
+.localnav-title a{
+    color: var(--apple-label2);
 }
 
 .content{
@@ -95,4 +98,10 @@ main{
     max-width: 980px;
     border-radius: 4px;
     border: 1px solid var(--apple-separator);
+}
+.nav-visibility{
+    visibility: hidden;
+}
+.nav-stickeytop{
+    top: 0rem;
 }
