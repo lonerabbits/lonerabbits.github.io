@@ -4,6 +4,12 @@ body{
     background-color: --apple-gray6;
     margin: 0;
 }
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
 .globalnav{
     height: 3rem;
     width: 100%;
@@ -13,8 +19,9 @@ body{
     align-items: center;
     backdrop-filter: saturate(180%) blur(20px);
     background: rgba(240,240,240,0.8);
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 0rem;
+    transition: 0.1s;
 }
 .globalnav-content{
     width: 80vw;
@@ -53,15 +60,15 @@ ul > li {
     display: inline;
     margin: 0 24px;
     float: left;
-
 }
 .nav-link-text{
-    color: var(--apple-label1);
+    color: var(--apple-label2);
     font-size: 16px;
 }
 
 .localnav{
-    height: 52px;
+    height: 3rem;
+    width: 100%;
     backdrop-filter: saturate(180%) blur(20px);
     background-color: rgba(255,255,255,0.72);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
@@ -69,8 +76,9 @@ ul > li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 3rem;
+    transition: 0.1s;
 }
 .localnav-content{
     width: 80vw;
@@ -82,26 +90,57 @@ ul > li {
     font-weight: bold;
 }
 .localnav-title a{
-    color: var(--apple-label2);
+    color: var(--apple-label1);
 }
 
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 4rem 10vw;
 }
-
+.tips-area{
+    max-width: 980px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* background-color: antiquewhite; */
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+.tip{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid var(--apple-separator);
+    width: 12rem;
+    overflow: hidden;
+    padding: 8px;
+    transition: 0.25s;
+    color: black;
+}
+.tip:hover{
+    background-color: var(--apple-brown);
+    color: white;
+}
+.tip-title{
+    font-weight: bold;
+    color: inherit;
+    font-size: 1.2rem;
+    margin: 4px;
+}
+.tip-note{
+    color: inherit;
+    margin: 4px;
+}
 main{
     background-color: var(--apple-bg1);
     height: 1000px;
-    width: 80vw;
+    width: 100%;
     max-width: 980px;
     border-radius: 4px;
     border: 1px solid var(--apple-separator);
 }
-.nav-visibility{
-    visibility: hidden;
-}
-.nav-stickeytop{
-    top: 0rem;
-}
+

@@ -10,66 +10,77 @@
     <link rel="stylesheet" href="test2.css">
 </head>
 <body>
-    <div class="globalnav" id="globalnav">
-        <div class="globalnav-content">
-            <div class="logo-area">
-                <image src="./favicon1.ico"></image>
-                <span>abc</span>
+    <div class="navbar">
+        <div class="globalnav" id="globalnav">
+            <div class="globalnav-content" id="globalnav-content">
+                <div class="logo-area">
+                    <image src="./favicon1.ico"></image>
+                    <span>abc</span>
+                </div>
+                <ul>
+                    <li>
+                        <a class="nav-link-text" href="./index.html">首页</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-text" href="./games/">游戏</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-text" href="./articles/">文章</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-text" href="./quotations/">测试</a>
+                    </li>
+                    <li>
+                        <a class="nav-link-text" href="./abouts/">工具</a>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li>
-                    <a class="nav-link-text" href="./index.html">1</a>
-                </li>
-                <li>
-                    <a class="nav-link-text" href="./games/">2</a>
-                </li>
-                <li>
-                    <a class="nav-link-text" href="./articles/">3</a>
-                </li>
-                <li>
-                    <a class="nav-link-text" href="./quotations/">4</a>
-                </li>
-                <li>
-                    <a class="nav-link-text" href="./abouts/">5</a>
-                </li>
-            </ul>
         </div>
-    </div>
-    <div class="localnav" id="localnav">
-        <div class="localnav-content">
-            <h2 class="localnav-title">
-                <a>独立寒秋湘江北去橘子洲头看</a>
-            </h2>
+        <div class="localnav" id="localnav">
+            <div class="localnav-content">
+                <h2 class="localnav-title">
+                    <a>
+                        <span>的撒按时</span>
+                    </a>
+                </h2>
+            </div>
         </div>
     </div>
     <div class="content">
+        <div class="tips-area">
+            <a class="tip" href="#">
+                <span class="tip-title">语录生成图片</span>
+                <span class="tip-note">备注</span>
+            </a>
+        </div>
         <main>
         </main>
     </div>
     <script>
-            function decideDirection() {
-                var positionY = 'undefined';
-                var directionY;
-                let globalNav = document.getElementById('globalnav');
-                let localNav = document.getElementById('localnav');
-                window.addEventListener('scroll', function () {
-                    setTimeout(function () {
-                        if (positionY === "undefined") {
-                            positionY = window.scrollY;
-                        }
-                        directionY = window.scrollY - positionY;
-                        if (directionY < 0) {
-                            globalNav.classList.remove('nav-visibility');
-                            localNav.classList.remove('nav-stickeytop')
-                        } else if (directionY > 0) {
-                            localNav.classList.add('nav-stickeytop')
-                            globalNav.classList.add('nav-visibility');
-                        }
+        function decideDirection() {
+            var positionY = 'undefined';
+            var directionY;
+            let globalNav = document.getElementById('globalnav');
+            let localNav = document.getElementById('localnav');
+            let globalNavContent = document.getElementById('globalnav-content');
+            window.addEventListener('scroll', function () {
+                setTimeout(function () {
+                    if (positionY === "undefined") {
                         positionY = window.scrollY;
-                    }, 200)
-                });
-            }
-            decideDirection();
-      </script>
+                    }
+                    directionY = window.scrollY - positionY;
+                    if (directionY < 0) {
+                        globalNav.style.top='0';
+                        localNav.style.top='3rem'
+                    } else if (directionY > 0) {
+                        globalNav.style.top='-3rem';
+                        localNav.style.top='0'
+                    }
+                    positionY = window.scrollY;
+                }, 200)
+            });
+        }
+        decideDirection();
+    </script>
 </body>
 </html>
