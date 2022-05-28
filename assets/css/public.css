@@ -1,23 +1,8 @@
-*{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
-}
 body{
+    /* background: url(../assets/img/civ6.jpg) no-repeat; */
+    background-size:cover;
     background-color: var(--apple-bg2);
-}
-.content{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 24px 12px;
-}
-
-body div .content .main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 48px;
+    margin: 0;
 }
 a{
     color: var(--apple-label1);
@@ -26,170 +11,97 @@ a{
 h2, h3, h4, p, span{
     color: var(--apple-label1);
 }
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.globalnav{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(240,240,240,0.8);
+    position: fixed;
+    top: 0rem;
+    transition: 0.1s;
+}
+.globalnav-content{
+    width: 80vw;
+    max-width: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 900;
+    margin: 0 64px 0 0;
+}
+.logo-area span{
+    color: var(--apple-brown);
+    margin: 0 4px;
+    font-size: 1.2rem;
+}
+.globalnav img{
+    height: 32px;
+}
 
-/* 以下是导航栏 */
-.wrap{
-    align-items: center;
-    justify-content: left;
-    display: flex;
-}
-.sideBar{
-    width: 60px;
-    border: 1.5px solid var(--apple-label1);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: 0.5s;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--apple-bg3);
-}
-.sideBar:hover {
-    width: 180px;
-}
-.sideBar:hover .sideLine{
-    width: 156px;
-}
-.avatar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 16px 4px 4px 4px;
-}
-.avatar div{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1.5px solid var(--apple-label1);
+ul{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    float: left;
+    white-space: nowrap;
     overflow: hidden;
 }
-.avatar div img{
-    width: 40px;
-    border-radius: 50%;
+ul > li {
+    display: inline;
+    margin: 0 24px;
+    float: left;
 }
-.avatar p{
+.nav-link-text{
+    color: var(--apple-label2);
     font-size: 16px;
-    color: var(--apple-label1);
+}
+
+.localnav{
+    height: 3rem;
+    width: 100%;
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.72);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 3rem;
+    transition: 0.1s;
+}
+.localnav-content{
+    width: 80vw;
+    max-width: 980px;
+}
+.localnav-title {
+    margin: 0;
+    font-size: 1.2rem;
     font-weight: bold;
 }
-.sideLine{
-    height: 2px;
-    width: 36px;
-    margin: 12px;
-    border-radius: 1px;
-    background-color: var(--apple-label1);
-    transition: 0.5s;
+.localnav-title a{
+    color: var(--apple-label1);
 }
-.sideMenu{
-    width: 156px;
-    margin: 12px 12px 36px 12px;
+.content{
     display: flex;
     flex-direction: column;
-}
-.menuItem{
-    display: flex;
-    justify-content: left;
     align-items: center;
-    margin: 6px 0px 6px 0px;
-    width: 156px;
-    height: 40px;
-    border-radius: 4px;
-    transition: 0.5s;
-    position: relative;
-}
-.menuItem:hover{
-    background-color: var(--apple-bg2);
-}
-.ionicon {
-    height: 24px;
-    width: 24px;
-    margin: 8px;
-    fill: var(--apple-blue);
-    color: var(--apple-label1);
-}
-.menuItem span{
-    font-weight: bold;
-    margin: 0px 12px;
-    transition: 0.5s;
-    opacity: 0;
-}
-.sideBar:hover .menuItem span{
-    opacity: 1;
-}
-.menuItem span{
-    opacity: 1;
-}
-.focus{
-    width: 4px;
-    height: 40px;
-    background-color: var(--apple-blue);
-    position: absolute;
-    left: 0px;
-    transition: 0.5s;
-    border-radius: 2px;
-    opacity: 0;
-}
-.menuItem:hover .focus{
-    opacity: 1;
-}
-
-
-@media screen and (max-width: 600px){
-    .content{
-        display: flex;
-        flex-direction: column;
-        margin: 24px 12px;
-        align-items: center;
-    }
-    body div .content .main{
-        padding: 0px 12px;
-        width: 100%;
-    }
-    .sideBar{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: 48px;
-        width: 320px;
-        border: 1.5px solid var(--apple-label1);
-        border-radius: 8px;
-    }
-    .ionicon{
-        display: none;
-    }
-    .avatar{
-        display: none;
-    }
-    .sideLine{
-        display: none;
-    }
-    .sideBar:hover {
-        width: 320px;
-    }
-    .sideMenu{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        margin: 0;
-    }
-    .menuItem{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 6px 0px 6px 0px;
-        width: 60px;
-        height: 40px;
-        border-radius: 4px;
-        transition: 0.5s;
-    }
-    .menuItem span{
-        opacity: 1;
-    }
-    .menuItem span a {
-        text-decoration: none;
-    }
-    .focus{
-        display: none;
-    }
+    padding: 6rem 10vw;
 }

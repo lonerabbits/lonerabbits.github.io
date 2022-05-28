@@ -1,7 +1,7 @@
 /* 引入字体 */
 @font-face {
     font-family: "ZLMLDKT";
-    src: url(../font/ZLMLDKT.otf);
+    src: url(./font/ZLMLDKT.otf);
 }
 
 /* 覆写导航栏主题色 */
@@ -31,8 +31,13 @@
     }
 }
 @media screen and (max-width: 600px){
+    .content{
+        padding: 6rem 0vw;
+    }
     .mainArea{
-        padding: 24px 18px;
+        width: 100%;
+        max-width: 360px;
+        padding: 24px 24px;
     }
 }
 .mainArea h3{
