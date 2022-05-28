@@ -6,8 +6,10 @@
         <title>Rabbitalone</title>
         <link rel="stylesheet" href="../assets/css/theme-color.css">
         <link rel="stylesheet" href="../assets/css/public.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./quotations.css">
         <link rel="shortcut icon" type="image/x-icon" href="../assets/icon/favicon1.ico">
+        <script src="./script/html2canvas.js" type="text/javascript"></script>
+        <script src="./script/quotations.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="navbar">
@@ -40,21 +42,48 @@
                 <div class="localnav-content">
                     <h2 class="localnav-title">
                         <a>
-                            <span>首页</span>
+                            <span>工具</span>
                         </a>
                     </h2>
                 </div>
             </div>
         </div>
         <div class="content">
-            <div class="tips-area">
-                <a class="tip" href="../tools/">
-                    <span class="tip-title">语录生成图片</span>
-                    <span class="tip-note">备注</span>
-                </a>
+            <h2>语录生成图片</h2>
+            <div class="mainArea">
+                <h3>1.内容</h3>
+                <h4>输入正文：</h4>
+                <input id="quotesshowinput">
+                <h4>输入出处：</h4>
+                <input id="quotesfrominput">
+                <div class="check-back">
+                    <h4>选择图片背景：</h4>
+                    <div class="check-back-box">
+                        <div>
+                            <input type="radio" name="checkbackcolor" id="inputcm" onchange="decideBackground1()" checked>
+                            <label id="checkcm">康米红</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="checkbackcolor" id="inputch" onchange="decideBackground2()">
+                            <label id="checkch">春华青</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="checkbackcolor" id="inputyj" onchange="decideBackground3()">
+                            <label id="checkyj">亚甲蓝</label>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="decide()">效果预览</button>
+                <h3>2.预览</h3>
+                <div class="container" id="pic">
+                    <p id="quotesshow" class="quotesshow"></p>
+                    <p id="quotesfrom" class="quotesfrom"></p>
+                </div>
+                <button onclick="convert()">确定生成</button>
+                <h3>3.结果</h3>
+                <h4>右键或长按保存图片</h4>
+                <img id="holder"></img>
             </div>
-            <main>
-            </main>
         </div>
         <script>
             function decideDirection() {
