@@ -1,8 +1,8 @@
 body{
-    /* background: url(../assets/img/civ6.jpg) no-repeat; */
-    background-size:cover;
     background-color: var(--apple-bg2);
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 a{
     color: var(--apple-label1);
@@ -16,6 +16,7 @@ h2, h3, h4, p, span{
     top: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .globalnav{
     height: 3rem;
@@ -26,8 +27,8 @@ h2, h3, h4, p, span{
     align-items: center;
     backdrop-filter: saturate(180%) blur(20px);
     background: var(--apple-gray6);
-    position: fixed;
-    top: 0rem;
+    /* position: fixed; */
+    /* top: 0rem; */
     transition: 0.1s;
 }
 .globalnav-content{
@@ -83,8 +84,8 @@ ul > li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 3rem;
+    /* position: fixed; */
+    /* top: 3rem; */
     transition: 0.1s;
 }
 .localnav-content{
