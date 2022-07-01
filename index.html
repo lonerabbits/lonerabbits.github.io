@@ -12,8 +12,8 @@
     </head>
     <body>
         <div class="navbar">
-            <div class="globalnav" id="globalnav">
-                <div class="globalnav-content" id="globalnav-content">
+            <div class="globalnav">
+                <div class="globalnav-content">
                     <a class="logo-area" href="../index.html">
                         <image src="../assets/icon/favicon1.ico"></image>
                         <span>abc</span>
@@ -37,15 +37,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="localnav" id="localnav">
-                <div class="localnav-content">
-                    <h2 class="localnav-title">
-                        <a>
-                            <span>首页</span>
-                        </a>
-                    </h2>
-                </div>
-            </div>
         </div>
         <div class="content">
             <div class="tips-area">
@@ -57,31 +48,5 @@
             <main>
             </main>
         </div>
-        <script>
-            function decideDirection() {
-                var positionY = 'undefined';
-                var directionY;
-                let globalNav = document.getElementById('globalnav');
-                let localNav = document.getElementById('localnav');
-                let globalNavContent = document.getElementById('globalnav-content');
-                window.addEventListener('scroll', function () {
-                    setTimeout(function () {
-                        if (positionY === "undefined") {
-                            positionY = window.scrollY;
-                        }
-                        directionY = window.scrollY - positionY;
-                        if (directionY < 0) {
-                            globalNav.style.top='0';
-                            localNav.style.top='3rem'
-                        } else if (directionY > 0) {
-                            globalNav.style.top='-3rem';
-                            localNav.style.top='0'
-                        }
-                        positionY = window.scrollY;
-                    }, 200)
-                });
-            }
-            decideDirection();
-        </script>
     </body>
 </html>
