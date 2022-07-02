@@ -18,7 +18,9 @@ h2, h3, h4, p, span{
     width: 100%;
     height: 3rem;
     background-color: var(--apple-bg1);
-    /* backdrop-filter: saturate(180%) blur(20px); */
+}
+.xxx{
+    backdrop-filter: saturate(180%) blur(20px);
 }
 .navbar-content{
     width: 90vw;
