@@ -4,105 +4,48 @@ body{
     display: flex;
     flex-direction: column;
 }
-a{
-    color: var(--apple-label1);
-    text-decoration: none;
-}
 h2, h3, h4, p, span{
     color: var(--apple-label1);
 }
+
 .navbar{
     position: sticky;
     top: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-.globalnav{
-    height: 3rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    backdrop-filter: saturate(180%) blur(20px);
-    background: var(--apple-gray6);
-    /* position: fixed; */
-    /* top: 0rem; */
-    transition: 0.1s;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--apple-bg1);
+    /* backdrop-filter: saturate(180%) blur(20px); */
 }
-.globalnav-content{
-    width: 80vw;
+.navbar-content{
+    width: 90vw;
     max-width: 980px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.logo-area{
+.logo{
+    height: 1.6rem;
+    margin: 0 12px;
+}
+.navbar-link{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    font-weight: 900;
-    margin: 0 64px 0 0;
+    justify-content: space-between;
 }
-.logo-area span{
-    color: var(--apple-brown);
-    margin: 0 4px;
-    font-size: 1.2rem;
-}
-.globalnav img{
-    height: 32px;
-}
-
-ul{
-    text-decoration: none;
-    list-style: none;
-    margin: 0;
-    padding: 0px;
-    float: left;
-    white-space: nowrap;
-    overflow: hidden;
-}
-ul > li {
-    display: inline;
+.navbar-link-text{
+    color: var(--apple-label2) !important;
+    font-size: 1rem;
     margin: 0 24px;
-    float: left;
-}
-.nav-link-text{
-    color: var(--apple-label2);
-    font-size: 16px;
 }
 
-.localnav{
-    height: 3rem;
-    width: 100%;
-    backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--apple-bg1);
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* position: fixed; */
-    /* top: 3rem; */
-    transition: 0.1s;
-}
-.localnav-content{
-    width: 80vw;
-    max-width: 980px;
-}
-.localnav-title {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-.localnav-title a{
-    color: var(--apple-label1);
-}
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6rem 10vw;
+    padding:0 0 6rem 0;
 }

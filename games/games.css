@@ -7,8 +7,13 @@ body{
 }
 main{
     display: flex;
-    width: 80%;
+    width: 90%;
     flex-direction: column;
+}
+header{
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
 }
 .game-category h2{
     display: flex;
