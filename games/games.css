@@ -21,6 +21,9 @@ header{
     align-items: center;
     font-family: 'Segoe UI';
 }
+.game-category h2 svg{
+    fill: var(--apple-label1);
+}
 .game-category h2 span{
     margin: 8px;
 }
