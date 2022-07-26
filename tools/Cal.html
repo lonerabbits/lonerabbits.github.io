@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rabbitalone</title>
+        <link rel="stylesheet" href="../assets/css/primer.css">
+        <link rel="stylesheet" href="../assets/css/theme-color.css">
+        <link rel="stylesheet" href="../assets/css/public.css">
+        <link rel="stylesheet" href="cal.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../assets/icon/favicon1.ico">
+        <script src="./script/cal.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="navbar border">
+            <div class="navbar-content">
+                <a class="logo-area" href="../index.html">
+                    <image class="logo" src="../assets/icon/favicon1.ico"></image>
+                </a>
+                <div class="navbar-link">
+                    <a class="Link--primary no-underline navbar-link-text" href="../index.html">首页</a>
+                    <a class="Link--primary no-underline navbar-link-text" href="../games/">游戏</a>
+                    <a class="Link--primary no-underline navbar-link-text" href="../tools/">工具</a>
+                </div>
+            </div>
+        </div>
+        <form name="molarity-calculator">
+            <h3>摩尔浓度计算器</h3>
+            <div class="form-group">
+                <div class="form-group-header">
+                    <label for="mass">质量 =</label>
+                </div>
+                <div class="form-group-body">
+                    <input class="form-control" type="text" placeholder="输入" aria-label="Repository description" id="mass"/>
+                    <select class="form-select">
+                        <option>mg</option>
+                        <option value="option 2">null</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group-header">
+                    <label for="concentration">浓度</label>
+                </div>
+                <div class="form-group-body">
+                    <input class="form-control" type="text" value="10" id="concentration"/>
+                    <select class="form-select" id="example-select" value="μM">
+                        <option>μM</option>
+                        <option value="option 2">mM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group-header">
+                    <label for="volume">× 体积</label>
+                </div>
+                <div class="form-group-body">
+                    <input class="form-control" type="text" placeholder="输入" aria-label="Repository description" id="volume"/>
+                    <select class="form-select" id="example-select">
+                        <option>mL</option>
+                        <option value="option 2">null</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group-header">
+                    <label for="molecular-weight">× 分子量</label>
+                </div>
+                <div class="form-group-body">
+                    <input class="form-control" type="text" value="64500" aria-label="Repository description" id="molecular-weight"/>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-primary" type="button" onclick="run()">运行</button>
+                <p id="output"></p>
+            </div>
+        </form>
+    </body>
+</html>

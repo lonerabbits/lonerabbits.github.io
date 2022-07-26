@@ -1,0 +1,10 @@
+form{
+    background-color: var(--apple-bg1);
+    width: 800px;
+    height: 500px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    padding: 16px;
+}
