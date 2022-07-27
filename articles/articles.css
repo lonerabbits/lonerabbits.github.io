@@ -3,9 +3,6 @@ body{
     flex-direction: column;
     align-items: center;
 }
-main{
-    width: 60%;
-}
 .container{
     background-color: var(--apple-bg3);
     width: 100%;
@@ -55,21 +52,19 @@ main{
     background-color: var(--apple-bg1);
     width: 768px;
     max-width: 1012px;
-    /* max-width: 980px; */
     border-radius: 4px;
     margin: 16px 0 0 0;
     padding: 64px;
 }
 
 
-
-
 @media screen and (max-width: 600px){
-    .main{
+    main{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0px 24px;
+        padding: 24px 24px 94px 24px;
+        width: 100%;
     }
     .container{
         height: 120px;
