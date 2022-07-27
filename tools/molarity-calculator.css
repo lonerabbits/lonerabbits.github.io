@@ -1,10 +1,31 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 form{
     background-color: var(--apple-bg1);
-    width: 800px;
+    width: 18rem;
     height: 500px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     margin: 16px;
     padding: 16px;
+}
+.form-group{
+    margin: 8px 0;
+}
+.form-group-body input{
+    width: 10rem !important;
+}
+.form-group-body select{
+    width: 4rem;
+}
+.info-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px;
 }
