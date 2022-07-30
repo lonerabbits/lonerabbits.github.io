@@ -26,59 +26,62 @@
                 </div>
             </div>
         </div>
-        <form name="molarity-calculator">
-            <div class="info-area">
-                <h3>摩尔浓度计算器</h3>
+        <div class="Box tool-card">
+            <div class="Box-header">
+                <h3 class="Box-title">摩尔浓度计算器</h3>
             </div>
-            <div class="form-group">
-                <div class="form-group-header">
-                    <label for="mass">质量 =</label>
-                </div>
-                <div class="form-group-body">
-                    <input class="form-control" type="text" placeholder="输入" aria-label="Repository description" id="mass"/>
-                    <select class="form-select">
-                        <option>mg</option>
-                        <option value="option 2">null</option>
-                    </select>
+            <div class="Box-body">
+                <form name="molarity-calculator">
+                    <div class="form-group">
+                        <div class="form-group-header">
+                            <label for="mass">质量 =</label>
+                        </div>
+                        <div class="form-group-body">
+                            <input class="form-control" type="text" placeholder="输入" aria-label="Repository description" id="mass"/>
+                            <select class="form-select">
+                                <option>mg</option>
+                                <option value="option 2">mg</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group-header">
+                            <label for="concentration">浓度</label>
+                        </div>
+                        <div class="form-group-body">
+                            <input class="form-control" type="text" value="10" id="concentration"/>
+                            <select class="form-select" id="example-select" value="μM">
+                                <option>μM</option>
+                                <option value="option 2">mM</option>
+                                <option value="option 2">M</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group-header">
+                            <label for="volume">× 体积</label>
+                        </div>
+                        <div class="form-group-body">
+                            <input class="form-control" type="text" placeholder="输入" aria-label="Repository description" id="volume"/>
+                            <select class="form-select" id="example-select">
+                                <option>mL</option>
+                                <option value="option 2">mL</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group-header">
+                            <label for="molecular-weight">× 分子量</label>
+                        </div>
+                        <div class="form-group-body">
+                            <input class="form-control" type="text" value="64500" aria-label="Repository description" id="molecular-weight"/>
+                        </div>
+                    </div>
+                </form>
+                <div class="tool-footer">
+                    <button class="btn btn-primary" type="button" onclick="run()">计算</button>
                 </div>
             </div>
-            <div class="form-group">
-                <div class="form-group-header">
-                    <label for="concentration">浓度</label>
-                </div>
-                <div class="form-group-body">
-                    <input class="form-control" type="text" value="10" id="concentration"/>
-                    <select class="form-select" id="example-select" value="μM">
-                        <option>μM</option>
-                        <option value="option 2">mM</option>
-                        <option value="option 2">M</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-group-header">
-                    <label for="volume">× 体积</label>
-                </div>
-                <div class="form-group-body">
-                    <input class="form-control" type="text" placeholder="输入" aria-label="Repository description" id="volume"/>
-                    <select class="form-select" id="example-select">
-                        <option>mL</option>
-                        <option value="option 2">null</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-group-header">
-                    <label for="molecular-weight">× 分子量</label>
-                </div>
-                <div class="form-group-body">
-                    <input class="form-control" type="text" value="64500" aria-label="Repository description" id="molecular-weight"/>
-                </div>
-            </div>
-            <div class="info-area">
-                <button class="btn btn-primary" type="button" onclick="run()">计算</button>
-                <p id="output"></p>
-            </div>
-        </form>
+        </div>
     </body>
 </html>
