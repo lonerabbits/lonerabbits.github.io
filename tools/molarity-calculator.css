@@ -21,9 +21,18 @@ form{
 .form-group-body select{
     width: 4rem;
 }
-.tool-footer{
-    margin: 16px;
+.tool-card-title{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
+}
+.tool-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tool-footer button{
+    margin: 16px;
 }
