@@ -27,70 +27,28 @@
     </div>
     <main class="border">
         <div class="markdown-body">
-            <h1>想法</h1>
-            <blockquote>
-            <p>你这是典型的自我意识过剩</p>
-            </blockquote>
-            <h3>关于文章</h3>
-            <p>如果是为了记录，顺便让人看看，那么就要求目录结构要符合写作习惯</p>
-            <p>如果是和人交流用的话，那么就需要有评论系统、展示更新情况、版本管理、不再要求目录结构</p>
-            <h1>路线图</h1>
-            <h2>1.进行中</h2>
-            <p>挺好的，反正能用</p>
-            <ul class="contains-task-list">
-            <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 文章使用GitHub样式</li>
-            <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 分为文章列表和文章内容</li>
-            <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 兼顾常用（语录生成器）和扩展性（入口）</li>
-            </ul>
-            <h2>2.计划内</h2>
-            <ul class="contains-task-list">
-            <li class="task-list-item">
-            <p><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 弹幕</p>
-            </li>
-            <li class="task-list-item">
-            <p><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 图片懒加载</p>
-            </li>
-            </ul>
-            <h2>3.考虑中</h2>
-            <ul>
-            <li>
-            <p>文章置顶。似乎不用，目前来看是全手操的吧</p>
-            </li>
-            <li>
-            <p>展示帮忙画的图？可能会有隐私问题</p>
-            </li>
-            <li>
-            <p>动态。真就过剩呗？</p>
-            </li>
-            <li>
-            <p>评论。有的东西只自己说是没什么意义的</p>
-            </li>
-            <li>
-            <p>文章分类和标签。哪儿有那么多东西……</p>
-            </li>
-            <li>
-            <p>打字机效果到底要不要？</p>
-            </li>
-            <li>
-            <p>小说页？类似于游戏</p>
-            </li>
-            <li>
-            <p>学术页——？</p>
-            </li>
-            </ul>
-            <h3>游戏页</h3>
-            <ul>
-            <li>要不要搞华丽一点儿？</li>
-            <li>鼠标悬停到图片上时边框动画？颜色渐变？</li>
-            </ul>
-            <h1>备注</h1>
-            <ul>
-            <li>GitHub提供的Markdown转换API在<code class="notranslate">https://api.github.com/markdown</code></li>
-            <li>读后感？</li>
-            <li>steam游戏封面大小是600×900px，保存在：<code class="notranslate">C:\Program Files (x86)\Steam\appcache\librarycache</code></li>
-            <li>steam背景色是<code>#1b2838</code></li>
-            <li>放照片可以用<code class="notranslate">scroll snap</code>属性实现每次全窗口显示一张图片，如<a href="https://www.bilibili.com/video/BV1R3411r79d?spm_id_from=333.824.b_76696577626f785f7265706f7274.1" rel="nofollow">2行 CSS 实现滚动贴合 Scroll Snap 特效</a>，顶部导航时可用<code class="notranslate">scroll-padding</code></li>
-            </ul>
+            <h3>提取RNA</h3>
+            <p>（全程通风橱内、无酶、冰上操作）</p>
+            <p>材料准备：细胞/组织、Trizol（RNA Isolater Total RNA Extraction Reagent）、三氯甲烷（氯仿）、异丙醇、DEPC水（RNAase Free ddH2O）、75%乙醇（乙醇:DEPC水=3:1）、1.5mL无酶EP管、冰盒、离心机4℃预冷</p>
+            <ol>
+                <li>将培基吸净，每孔加入预冷的无酶PBS8字混匀洗涤1遍。</li>
+                <li>PBS吸净后，每孔加入1mLTrizol。（无论6孔板或12孔板）（组织RNA提取时，加入 Trizol后，每个EP管中加入两颗二氧化钛颗粒，研磨机上研磨1min,重复2-3次。）</li>
+                <li>冰上放置10min充分反应裂解细胞，标记第1批EP管。（说明书5min，祥昕哥之前30min）</li>
+                <li>吹打数次后加入EP管中。</li>
+                <li>每管加入200uL三氯甲烷（每1mLTrizol），剧烈摇晃3min，冰上静置10min萃取。</li>
+                <li>4℃、14000rpm离心15min，标记第2批EP管。</li>
+                <li>离心后分为3层：无色上层RNA、白色中层蛋白、粉色下层DNA。取含有RNA的无色上层500uL加入新EP管中。（400-500uL，600uL容易吸到白色中层）</li>
+                <li>每管加入500uL异丙醇（每1mLTrizol），上下翻转10次混匀，室温静置10min待RNA沉淀。</li>
+                <li>4℃、14000rpm离心15min。（注意EP管离心时按同一方向放置，便于分辨RNA沉淀方向）</li>
+                <li>朝RNA沉淀反方向倒掉上清，倒扣在纸上吸干，只可翻转1次，因为水回到管底会冲散RNA沉淀。（可稍离心，用枪头朝RNA沉淀反方向吸走上清）</li>
+                <li>每管加入1mL75%乙醇（每1mLTrizol），上下翻转10次混匀。（这一步是洗去异丙醇，可剧烈摇晃数秒）</li>
+                <li>4℃、14000rpm离心15min。</li>
+                <li>倒掉上清，倒扣在纸上吸干静置2min，敞开盖子通风橱内风干10min。（乙醇易挥发，不宜过久，太干了RNA也会降解）</li>
+                <li>每管加入20uLDEPC水（可不吹打），稍离心后震荡混匀。 （组织50-60uL）</li>
+                <li>微量分光光度计测RNA浓度。开机选核酸浓度测定 → 点主页键 → 选择RNA → 滴DEPC水清洗一遍后开始测定。先测空白样品（DEPC水）后测样品，加样1-2uL，每次加样之间用纸按干。</li>
+                <li>（RNA浓度需在100ng/uL以上。DNA与RNA预期的A260/A280比值分别是1.8和2.0，低于此数值可能含有蛋白质和其他有机物类污染物。核酸的A260/A230预期比值为2.0-2.2，可能含有的污染物有Tris、EDTA、Trizol、苯酚、硫氰酸胍和其它在230n波长处有吸收的缓冲液中盐类物质。）</li>
+                <li>进行逆转录或-80℃保存。</li>
+            </ol>
         </div>
     </main>
     <footer>
