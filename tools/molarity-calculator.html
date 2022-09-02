@@ -39,10 +39,11 @@
                             <label for="mass">质量 =</label>
                         </div>
                         <div class="form-group-body">
-                            <input class="form-control" type="text" placeholder="输入" aria-label="Repository description" id="mass"/>
-                            <select class="form-select">
-                                <option>mg</option>
-                                <option value="option 2">mg</option>
+                            <input class="form-control" type="text" placeholder="输入" id="mass"/>
+                            <select class="form-select" id="mass_unit">
+                                <option value="1">g</option>
+                                <option value="1000" selected>mg</option>
+                                <option value="1000000">μg</option>
                             </select>
                         </div>
                     </div>
@@ -51,11 +52,11 @@
                             <label for="concentration">浓度</label>
                         </div>
                         <div class="form-group-body">
-                            <input class="form-control" type="text" value="10" id="concentration"/>
-                            <select class="form-select" id="example-select" value="μM">
-                                <option>μM</option>
-                                <option value="option 2">mM</option>
-                                <option value="option 2">M</option>
+                            <input class="form-control" type="text" placeholder="输入"id="concentration"/>
+                            <select class="form-select" id="concentration_unit" value="μM">
+                                <option value="1">M</option>
+                                <option value="1000">mM</option>
+                                <option value="1000000" selected>μM</option>
                             </select>
                         </div>
                     </div>
@@ -65,9 +66,9 @@
                         </div>
                         <div class="form-group-body">
                             <input class="form-control" type="text" placeholder="输入" aria-label="Repository description" id="volume"/>
-                            <select class="form-select" id="example-select">
-                                <option>mL</option>
-                                <option value="option 2">mL</option>
+                            <select class="form-select" id="volume_unit">
+                                <option value="1">L</option>
+                                <option value="1000" selected>mL</option>
                             </select>
                         </div>
                     </div>
@@ -76,13 +77,13 @@
                             <label for="molecular-weight">× 分子量</label>
                         </div>
                         <div class="form-group-body">
-                            <input class="form-control" type="text" value="64500" aria-label="Repository description" id="molecular-weight"/>
+                            <input class="form-control" type="text" placeholder="输入" aria-label="Repository description" id="molecular-weight"/>
                         </div>
                     </div>
                 </form>
                 <div class="tool-footer">
-                    <button class="btn btn-outline" type="button" onclick="run()">重置</button>
-                    <button class="btn btn-primary" type="button" onclick="run()">计算</button>
+                    <button class="btn btn-outline" type="button" onclick="reset()">重置</button>
+                    <button class="btn btn-primary" type="button" onclick="calculate()">计算</button>
                 </div>
             </div>
         </div>
