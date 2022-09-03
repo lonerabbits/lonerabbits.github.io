@@ -43,10 +43,14 @@
 }
 main{
     background-color: var(--apple-bg1);
-    height: 1000px;
+    height: 360px;
     width: 100%;
     /* max-width: 1012px; */
     max-width: 980px;
     border-radius: 4px;
 }
-
+#particles-js{
+    height: 120px;
+    width: 100%;
+    background-color: #24292f;
+}
