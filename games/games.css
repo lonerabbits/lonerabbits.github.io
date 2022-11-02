@@ -4,6 +4,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Microsoft YaHei", sans-serif;
 }
 main{
     display: flex;
@@ -19,7 +20,6 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: 'Segoe UI';
 }
 .game-category h2 svg{
     fill: var(--apple-label1);
@@ -41,7 +41,6 @@ header{
     overflow: hidden;
     /* padding: 8px; */
     border-radius: 4px;
-    font-family: 'Segoe UI';
     /* box-shadow: 0 1px 3px rgba(18,18,18,.1); */
 }
 .game-card:hover{
